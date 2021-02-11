@@ -1,4 +1,4 @@
-A-Star-Pathfinding-Visualizer: this tool will allow the user to set start and end points and will calculate the best possible path, taking into account various boundaries. 
+A-Star-Pathfinding-Visualizer: this tool will allow the user to set start and end points and will calculate the best possible path using the A* Search Algorithm, taking into account various boundaries. 
 
 This tool was made using Python and Pygame.
 
