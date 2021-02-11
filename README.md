@@ -2,7 +2,7 @@ A-Star-Pathfinding-Visualizer: this tool will allow the user to set start and en
 
 This tool was made using Python and Pygame.
 
-Instruction: 
+Instructions: 
 
 Make sure you have Pygame installed to properly run the program.
 
