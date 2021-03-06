@@ -10,16 +10,16 @@ WIN = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption('A* Pathfinding Algorithm')
 
 #Colors
+YELLOW = (255, 183, 39)
 BLUE = (102, 153, 255)
-RED = (255, 80, 80)
-GREEN = (153, 255, 102)
-YELLOW = (255, 255, 102)
-PURPLE = (102, 0, 102)
+RED = (201,42,47)
+GREEN = (179, 198, 57)
 ORANGE = (255, 153, 51)
 TURQUOISE = (64, 224, 208)
 BLACK = (0, 0, 0)
 GREY = (128, 128, 128)
 WHITE = (255, 255, 255)
+PURPLE = (102, 0, 102)
 
 #Visualization tool
 class Node:
@@ -43,7 +43,7 @@ class Node:
 
   #in open set:
   def is_open(self):
-    return self.color == GREEN
+    return self.color == PURPLE
 
   def is_barrier(self):
     return self.color == BLACK
@@ -52,7 +52,7 @@ class Node:
     return self.color == ORANGE
 
   def is_end(self):
-    return self.color == PURPLE
+    return self.color == YELLOW
 
   #Change the colors:
   def reset(self):
@@ -65,7 +65,7 @@ class Node:
     self.color = RED
   
   def make_open(self):
-    self.color = GREEN
+    self.color = PURPLE
 
   def make_barrier(self):
     self.color = BLACK
@@ -74,7 +74,7 @@ class Node:
     self.color = TURQUOISE
   
   def make_path(self):
-    self.color = PURPLE
+    self.color = YELLOW
 
   def draw(self, win):
     pygame.draw.rect(WIN, self.color, (self.x, self.y, self.width, self.width))
