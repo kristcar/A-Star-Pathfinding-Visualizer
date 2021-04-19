@@ -10,3 +10,4 @@ This tool was made using Python and Pygame.
 
 - Click to set start and end nodes, then press and hold to draw boundaries. To erase, right click and drag. Press Space to run the program and Escape to clear the board. 
 
+![astar](https://user-images.githubusercontent.com/75532491/115261716-dd040700-a101-11eb-8f09-68325415ce0b.gif)
